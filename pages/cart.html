@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="subpage-body">
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <a href="index.html" class="icon-item"><i class="fas fa-home"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h3>您的購物車</h3>
+        
+        <div class="cart-header">
+            <div>商品</div>
+            <div>單價</div>
+            <div>數量</div>
+            <div>小計</div>
+            <div></div> </div>
+
+        <div id="cartList"></div>
+        
+        <div id="cartSummary" class="cart-summary" style="display: none;">
+            <span class="total-price" id="totalPrice">總計: $ 0</span>
+            <button class="box-btn" onclick="checkout()">前往結帳</button>
+            <button class="clear-cart-btn" onclick="clearCart()">清空購物車</button>
+        </div>
+        <p class="empty-msg" id="emptyMessage" style="display: none;">購物車目前是空的喔！</p>
+    </main>
+<script src="../assets/js/cart.js"></script>
+</body>
+</html>

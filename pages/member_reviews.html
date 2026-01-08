@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 - 評論紀錄 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="subpage-body">
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <a href="index.html" class="icon-item"><i class="fas fa-home"></i></a>
+                <a href="cart.html" class="icon-item"><i class="fas fa-shopping-bag"></i></a>
+                <a href="member_profile.html" class="icon-item active-user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container member-center-page">
+        <section class="member-profile-header">
+            <h2>會員中心</h2>
+            <div class="title-underline"></div>
+        </section>
+
+        <nav class="member-nav">
+            <a href="member_profile.html" class="nav-item"><i class="fas fa-user-circle"></i> 個人資料</a>
+            <a href="member_orders.html" class="nav-item"><i class="fas fa-history"></i> 歷史訂單</a>
+            <a href="member_reviews.html" class="nav-item active"><i class="fas fa-star"></i> 評論紀錄</a>
+        </nav>
+
+        <section id="reviews" class="member-tab-content">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>評論與評分紀錄</h3>
+                <button class="write-review-trigger" id="openModalBtn">
+                    <i class="fas fa-pen-nib"></i> 撰寫新評論
+                </button>
+            </div>
+
+            <div class="review-record-list" id="reviewList">
+                </div>
+        </section>
+    </main>
+    
+    <div id="reviewModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="closeReviewModal">&times;</button>
+            <h3 style="text-align: left; margin-bottom: 20px;">撰寫商品評論</h3>
+            <div class="review-form-body" style="text-align: left;">
+                <input type="hidden" id="editIndex" value="-1"> <div style="margin-bottom: 15px;">
+                    <label>商品名稱：</label>
+                    <input type="text" id="inputProductName" style="width:100%; padding:10px; border:1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>商品類型：</label>
+                    <input type="text" id="inputProductType" placeholder="例如：購買：黑色 L" style="width:100%; padding:10px; border:1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>評分：</label>
+                    <select id="reviewRating" style="width: 100%; padding: 10px; border: 1px solid #ddd;">
+                        <option value="5">★★★★★ (5.0)</option>
+                        <option value="4">★★★★☆ (4.0)</option>
+                        <option value="3">★★★☆☆ (3.0)</option>
+                        <option value="2">★★☆☆☆ (2.0)</option>
+                        <option value="1">★☆☆☆☆ (1.0)</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label>評論內容：</label>
+                    <textarea id="reviewTextArea" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ddd;"></textarea>
+                </div>
+                <button id="submitReviewBtn" class="modal-add-to-cart-btn" style="width: 100%; background: #333; color: white; padding: 12px; border: none; cursor:pointer;">提交評論</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="copyright"><p>© 2025 HYPE store. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/member_reviews.js"></script>
+</body>
+</html>

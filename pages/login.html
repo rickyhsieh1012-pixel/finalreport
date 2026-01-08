@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="subpage-body">
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <div class="icon-item"><i class="fas fa-search"></i></div>
+                <a href="login.html" class="icon-item"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="icon-item cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+                <a href="register.html" class="icon-item"><i class="fas fa-user-plus"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-single-container">
+        <section class="auth-box-v2">
+            <h3>登入</h3>
+            <form class="line-form" id="fastLoginForm">
+                <div class="input-group">
+                    <label>手機號碼或e-mail</label>
+                    <input type="email">
+                </div>
+                <div class="input-group">
+                    <label>密碼</label>
+                    <input type="password">
+                </div>
+                <a href="register.html" class="forgot-link-v2">尚未註冊?</a>
+                <button type="submit" class="box-btn">開始購物！</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('fastLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            sessionStorage.setItem('isLoggedIn', 'true');
+
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

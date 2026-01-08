@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <div class="icon-item"><i class="fas fa-search"></i></div>
+                
+                <a href="member_profile.html" class="icon-item">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="cart.html" class="icon-item cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                
+                <a href="register.html" class="icon-item">
+                    <i class="fas fa-user-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">首頁</a></li>
+                    <li><a href="products.html" class="nav-link">商品總覽</a></li>
+                    <li><a href="clothes.html" class="nav-link">上衣</a></li>
+                    <li><a href="pants.html" class="nav-link">褲子</a></li>
+                    <li><a href="fitting.html" class="nav-link">配件</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+
+                <div class="carousel-track">
+                    
+                    <div class="container hero-container carousel-slide" data-slide="1">
+                        <a href="#" class="product-link" data-id="1001" data-name="主打商品: Air Force 1'07" data-price="3600" data-img="../assets/image/fit/IMG_5764.png"
+                            data-description="經典白色 Air Force 1 '07 運動鞋，完美融合舒適性與時尚風格。耐穿的皮革鞋面，是日常穿搭的首選單品。">
+                            <div class="hero-image">
+                                <img src="../assets/image/fit/IMG_5764.png" alt="商品模特兒照片">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="container hero-container carousel-slide" data-slide="2">
+                        <a href="#" class="product-link" data-id="1002" data-name="新品上架: Nike 籃球鞋" data-price="5880" data-img="../assets/image/fit/IMG_9020.jpg"
+                            data-description="Nike 籃球鞋，為您帶來卓越的支撐和緩震性能。適合室內外激烈賽事，展現您的最佳表現。">
+                            <div class="hero-image">
+                                <img src="../assets/image/fit/IMG_9020.jpg" alt="新品系列圖">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="container hero-container carousel-slide" data-slide="3">
+                        <a href="#" class="product-link" data-id="1003" data-name="獨家特惠: Air Force (配色 2)" data-price="3800" data-img="../assets/image/fit/IMG_5765.png"
+                            data-description="Air Force (配色 2)，以經典款型搭配獨特配色。皮革鞋面質感出眾，為您的日常穿搭增添亮點。">
+                            <div class="hero-image">
+                                <img src="../assets/image/fit/IMG_5765.png" alt="特價品圖">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="container hero-container carousel-slide" data-slide="4">
+                        <a href="#" class="product-link" data-id="1004" data-name="春夏新款: aeae 天使之翼帽" data-price="2080" data-img="../assets/image/fit/IMG_5792.png"
+                            data-description="aeae 天使之翼鴨舌帽，獨特的刺繡圖案，展現個性街頭風格。可調節式設計，提供舒適貼合感。">
+                            <div class="hero-image">
+                                <img src="../assets/image/fit/IMG_5792.png" alt="新品系列圖">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="container hero-container carousel-slide" data-slide="5">
+                            <a href="#" class="product-link" data-id="1005" data-name="極簡主義: 針織毛衣" data-price="550" data-img="../assets/image/clothes/IMG_5780.png"
+                                data-description="柔軟親膚的針織毛衣，經典百搭款。寬鬆剪裁，輕鬆打造日系休閒風格，是換季穿搭的理想選擇。">
+                            <div class="hero-image">
+                                <img src="../assets/image/clothes/IMG_5780.png" alt="商品模特兒照片">
+                            </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dot-pagination" id="carousel-dots">
+                <span class="dot active" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+                <span class="dot" data-slide="5"></span>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h3>本月熱銷</h3>
+                <div class="product-grid">
+                    
+                    <div class="product-card" data-id="16"
+                        data-description="這款柔軟的針織毛衣，採用舒適親膚材質。米白配色易於搭配，是秋冬季節打造休閒穿搭的必備單品。">
+                        <a href="#" class="view-btn product-link"> 
+                        <img src="../assets/image/clothes/IMG_5783.png" alt="針織毛衣">
+                        <div class="product-info"> 
+                            <p class="product-name">針織毛衣</p>
+                            <span class="product-price" data-price="450">$ 450</span>
+                        </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-id="27"
+                        data-description="Dunk 低筒 Next Nature 系列，使用至少 20% 的再生材質製成，時尚又環保。簡約配色，輕鬆融入您的穿搭，同時為地球盡一份心力。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/fit/IMG_5788.png" alt="鞋子">
+                        <div class="product-info">
+                            <p class="product-name">Dunk 低筒 (配色)</p>
+                            <span class="product-price" data-price="3400">$ 3400</span>
+                        </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-id="20"
+                        data-description="美式寬鬆版型的迷彩長褲，採用耐穿棉質布料。多口袋設計，風格強烈，適合工裝或街頭休閒穿搭。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/pants/IMG_5842.png" alt="褲子">
+                        <div class="product-info">
+                            <p class="product-name">美式迷彩褲</p>
+                            <span class="product-price" data-price="699">$ 699</span>
+                        </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-id="29"
+                        data-description="MUCENT 迷彩圖案漁夫帽，為您的穿搭增添軍事風格。柔軟透氣材質，適合戶外活動或日常遮陽。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/fit/IMG_5849.png" alt="帽子">
+                        <div class="product-info">
+                            <p class="product-name">MUCENT 迷彩款</p>
+                            <span class="product-price" data-price="1290">$ 1290</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="about.html">關於我們</a>
+                <a href="notice.html">購物須知</a>
+                <a href="membership.html">會員制度</a>
+                <a href="returns.html">退貨方式</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 HYPE store. All Rights Reserved.</p>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div id="productModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="closeModalBtn">
+                &times; </button>
+            <div class="modal-product-detail">
+                <div class="modal-product-image">
+                    <img id="modalImage" src="" alt="商品圖片預覽">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modalTitle">商品名稱</h3> 
+                    <span class="price" id="modalPrice">價格</span>
+                    <p class="description" id="modalDescription">
+                        您可以在這裡看到商品詳細說明、材質、尺寸等資訊，讓您快速決定是否購買。
+                    </p>
+                    
+                    <div class="product-reviews">
+                        <h4>顧客評論</h4>
+                        
+                        <div class="rating-summary">
+                            <span class="avg-rating" id="avgRating">4.8</span>
+                            <div class="stars" id="starSummary">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i> </div>
+                            <span class="review-count" id="reviewCount">(共 3 則評論)</span>
+                        </div>
+
+                        <div class="review-list" id="reviewList">
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">蔡**</span> 
+                                    <span class="review-category">(購買：Dunk 低筒 Next Nature)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <span class="review-date">2025/11/01</span>
+                                </div>
+                                <p class="review-text">鞋子質感非常好，穿起來很舒服，很百搭！出貨速度也很快，會再回購！</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">羅**</span>
+                                    <span class="review-category">(購買：Air Jordan 1 低筒 SE)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">2025/10/28</span>
+                                </div>
+                                <p class="review-text">版型正常，但鞋帶有點容易鬆，整體來說瑕不掩瑜，非常滿意這次的購物體驗。</p>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">謝**</span>
+                                    <span class="review-category">(購買：黃色上衣)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <span class="review-date">2025/10/20</span>
+                                </div>
+                                <p class="review-text">實品顏色比照片更漂亮！很喜歡這種簡約的風格，已經推薦給朋友了。</p>
+                            </div>
+                        </div> 
+                        
+                        <form id="reviewForm" class="review-form">
+                            <div class="form-row">
+                            
+                            </div>
+                        </form>
+                    </div>
+                    <button class="modal-add-to-cart-btn" id="addToCartBtn">
+                        <i class="fas fa-shopping-bag"></i> 加入購物車
+                    </button>
+                    
+                    <a href="cart.html" class="modal-buy-btn" id="modalBuyBtn">立即查看購物車</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

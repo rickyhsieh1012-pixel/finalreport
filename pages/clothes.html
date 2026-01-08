@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品總覽 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html"><h1 class="logo">HYPE store</h1></a>
+            <div class="header-icons">
+                <div class="icon-item"><i class="fas fa-search"></i></div>
+                
+                <a href="member_profile.html" class="icon-item">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="cart.html" class="icon-item cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                
+                <a href="register.html" class="icon-item">
+                    <i class="fas fa-user-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul> 
+                    <li><a href="index.html" class="nav-link">首頁</a></li>
+                    <li><a href="products.html" class="nav-link">商品總覽</a></li>
+                    <li><a href="clothes.html" class="nav-link active">上衣</a></li>
+                    <li><a href="pants.html" class="nav-link">褲子</a></li>
+                    <li><a href="fitting.html" class="nav-link">配件</a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+    <main>
+        <section class="product-list-page">
+            <div class="container">
+                <h2 class="page-title">全部商品 (8)</h2>
+                
+                <div class="product-grid">
+                    
+                    <div class="product-card" data-id="9"
+                            data-description="採用輕薄透氣的棉麻混紡材質，寬鬆剪裁，營造休閒隨性的日系風格。適合多層次穿搭或單穿，是春夏季的百搭單品。">
+                        <a href="#" class="view-btn product-link"> 
+                        <img src="../assets/image/clothes/IMG_8990.png" alt="日系襯衫">
+                        <div class="product-info"> 
+                            <p class="product-name">日系襯衫</p>
+                            <span class="product-price" data-price="299">$ 299</span>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product-card" data-id="10"
+                            data-description="獨特的「洞洞」鏤空設計，展現透視層次感，時尚前衛。輕盈面料，非常適合海灘或街頭造型，打造清爽夏日風格。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/clothes/IMG_8997.png" alt="洞洞襯衫">
+                        <div class="product-info">
+                            <p class="product-name">洞洞襯衫</p>
+                            <span class="product-price" data-price="399">$ 399</span>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product-card" data-id="11"
+                            data-description="經典款連帽大學踢，內裡刷毛提供保暖舒適。簡約Logo設計，適合各種休閒場合，是秋冬必備的基礎單品。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/clothes/IMG_5836.png" alt="連帽大學踢">
+                        <div class="product-info">
+                            <p class="product-name">連帽大學踢</p>
+                            <span class="product-price" data-price="499">$ 499</span>
+                        </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product-card" data-id="12"
+                            data-description="柔軟親膚的針織毛衣，經典百搭款。寬鬆剪裁，輕鬆打造日系休閒風格，是換季穿搭的理想選擇。">
+                        <a href="#" class="view-btn product-link">
+                        <img src="../assets/image/clothes/IMG_5780.png" alt="針織毛衣">
+                        <div class="product-info">
+                            <p class="product-name">針織毛衣</p>
+                            <span class="product-price" data-price="550">$ 550</span>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card" data-id="13"
+                            data-description="輕量運動無袖背心，採用吸濕排汗材質，保持身體乾爽。適合健身訓練或夏季街頭穿搭，展現俐落線條。">
+                        <a href="#" class="view-btn product-link">
+                            <img src="../assets/image/clothes/IMG_8999.png" alt="無袖背心">
+                            <div class="product-info">
+                                <p class="product-name">無袖背心</p>
+                                <span class="product-price" data-price="199">$ 199</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card" data-id="14"
+                            data-description="寬版黑白條紋短袖上衣，純棉材質柔軟舒適。經典休閒設計，輕鬆搭配牛仔褲或休閒褲，打造美式復古風格。">
+                        <a href="#" class="view-btn product-link">
+                            <img src="../assets/image/clothes/IMG_5838.png" alt="條紋上衣">
+                            <div class="product-info">
+                                <p class="product-name">條紋上衣</p>
+                                <span class="product-price" data-price="399">$ 399</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card" data-id="15"
+                            data-description="高彈力貼身內搭打底衣，提供優越的延展性和舒適度。適合多層次穿搭，在保持溫暖的同時，也能修飾身形。">
+                        <a href="#" class="view-btn product-link">
+                            <img src="../assets/image/clothes/IMG_5837.png" alt="內搭打底衣">
+                            <div class="product-info">
+                                <p class="product-name">內搭打底衣</p>
+                                <span class="product-price" data-price="199">$ 199</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-card" data-id="16"
+                            data-description="這款柔軟的針織毛衣，採用舒適親膚材質。米白配色易於搭配，是秋冬季節打造休閒穿搭的必備單品。">
+                        <a href="#" class="view-btn product-link">
+                            <img src="../assets/image/clothes/IMG_5783.png" alt="針織毛衣">
+                            <div class="product-info">
+                                <p class="product-name">針織毛衣</p>
+                                <span class="product-price" data-price="450">$ 450</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="about.html">關於我們</a>
+                <a href="notice.html">購物須知</a>
+                <a href="membership.html">會員制度</a>
+                <a href="returns.html">退貨方式</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 HYPE store. All Rights Reserved.</p>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div id="productModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="closeModalBtn">
+                &times; </button>
+            <div class="modal-product-detail">
+                <div class="modal-product-image">
+                    <img id="modalImage" src="" alt="商品圖片預覽">
+                </div>
+                <div class="modal-product-info">
+                    <h3 id="modalTitle">商品名稱</h3> 
+                    <span class="price" id="modalPrice">價格</span>
+                    <p class="description" id="modalDescription">
+                        您可以在這裡看到商品詳細說明、材質、尺寸等資訊，讓您快速決定是否購買。
+                    </p>
+                    
+                    <div class="product-reviews">
+                        <h4>顧客評論</h4>
+                        
+                        <div class="rating-summary">
+                            <span class="avg-rating" id="avgRating">4.8</span>
+                            <div class="stars" id="starSummary">
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star active"></i>
+                                <i class="fas fa-star"></i> </div>
+                            <span class="review-count" id="reviewCount">(共 3 則評論)</span>
+                        </div>
+
+                        <div class="review-list" id="reviewList">
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">蔡**</span> 
+                                    <span class="review-category">(購買：Dunk 低筒 Next Nature)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <span class="review-date">2025/11/01</span>
+                                </div>
+                                <p class="review-text">鞋子質感非常好，穿起來很舒服，很百搭！出貨速度也很快，會再回購！</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">羅**</span>
+                                    <span class="review-category">(購買：Air Jordan 1 低筒 SE)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">2025/10/28</span>
+                                </div>
+                                <p class="review-text">版型正常，但鞋帶有點容易鬆，整體來說瑕不掩瑜，非常滿意這次的購物體驗。</p>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">謝**</span>
+                                    <span class="review-category">(購買：黃色上衣)</span> <div class="stars">
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <span class="review-date">2025/10/20</span>
+                                </div>
+                                <p class="review-text">實品顏色比照片更漂亮！很喜歡這種簡約的風格，已經推薦給朋友了。</p>
+                            </div>
+                        </div> 
+                        
+                        <form id="reviewForm" class="review-form">
+                            <div class="form-row">
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <button class="modal-add-to-cart-btn" id="addToCartBtn">
+                        <i class="fas fa-shopping-bag"></i> 加入購物車
+                    </button>
+                    
+                    <a href="cart.html" class="modal-buy-btn" id="modalBuyBtn">立即查看購物車</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

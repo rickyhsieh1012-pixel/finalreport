@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單摘要 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="subpage-body">
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <a href="index.html" class="icon-item"><i class="fas fa-home"></i></a>
+                <a href="cart.html" class="icon-item"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="summary-container">
+        <h3>訂單摘要</h3>
+
+        <div id="orderList">
+        </div>
+
+        <div id="priceDetails" style="display: none;">
+            <div class="price-breakdown">
+                <div class="price-line">
+                    <span>商品總金額：</span>
+                    <span id="subTotal">$ 0</span>
+                </div>
+                <div class="price-line">
+                    <span>運費：</span>
+                    <span id="shippingFee" class="shipping-fee">$ 60</span>
+                </div>
+                
+                <div class="price-line final-total">
+                    <span>應付總金額：</span>
+                    <span id="finalTotal">$ 0</span>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <button class="box-btn" onclick="processCheckout()">確認並付款</button>
+            </div>
+        </div>
+        
+        <p class="empty-msg" id="emptyMessage" style="display: none;">
+            購物車是空的，請先回購物車新增商品。
+            <br><a href="cart.html">前往購物車</a>
+        </p>
+
+    </main>
+
+<script src="../assets/js/checkout.js"></script>
+</body>
+</html>

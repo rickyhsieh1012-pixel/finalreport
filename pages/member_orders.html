@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心 - 歷史訂單 - HYPE store</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 2000;
+            justify-content: center; align-items: center;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-content {
+            background: white; padding: 30px; border-radius: 8px;
+            width: 90%; max-width: 600px; position: relative;
+            max-height: 80vh; overflow-y: auto;
+        }
+        .modal-close {
+            position: absolute; top: 15px; right: 20px;
+            font-size: 24px; cursor: pointer; color: #888;
+        }
+        .order-detail-item {
+            display: flex; justify-content: space-between;
+            padding: 10px 0; border-bottom: 1px solid #eee;
+        }
+        .pagination a.disabled {
+            pointer-events: none;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body class="subpage-body">
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"><a href="index.html">HYPE store</a></h1>
+            <div class="header-icons">
+                <a href="index.html" class="icon-item"><i class="fas fa-home"></i></a>
+                <a href="cart.html" class="icon-item"><i class="fas fa-shopping-bag"></i></a>
+                <a href="member_profile.html" class="icon-item active-user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container member-center-page">
+        <section class="member-profile-header">
+            <h2>會員中心</h2>
+            <div class="title-underline"></div>
+        </section>
+
+        <nav class="member-nav">
+            <a href="member_profile.html" class="nav-item"><i class="fas fa-user-circle"></i> 個人資料</a>
+            <a href="member_orders.html" class="nav-item active"><i class="fas fa-history"></i> 歷史訂單</a>
+            <a href="member_reviews.html" class="nav-item"><i class="fas fa-star"></i> 評論紀錄</a>
+        </nav>
+
+        <section id="orders" class="member-tab-content">
+            <h3>歷史消費紀錄</h3>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>訂單編號</th>
+                        <th>訂購日期</th>
+                        <th>總金額</th>
+                        <th>狀態</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody">
+                    </tbody>
+            </table>
+
+            <div class="pagination" id="pagination">
+                </div>
+        </section>
+    </main>
+
+    <div id="orderModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" id="closeOrderModal">&times;</span>
+            <h3 style="text-align: left; margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 10px;">訂單明細</h3>
+            <div id="orderDetailContent">
+                </div>
+            <button onclick="document.getElementById('orderModal').classList.remove('active')" 
+                    style="width: 100%; background: #333; color: white; border: none; padding: 12px; margin-top: 20px; cursor: pointer;">
+                關閉
+            </button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="about.html">關於我們</a>
+                <a href="notice.html">購物須知</a>
+                <a href="membership.html">會員制度</a>
+                <a href="returns.html">退貨方式</a>
+            </div>
+            <div class="copyright"><p>© 2025 HYPE store. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/member_orders.js">
+    </script>
+</body>
+</html>
